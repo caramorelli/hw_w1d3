@@ -1,0 +1,43 @@
+
+git_pract
+
+git commit [some files]
+Or if you are sure that you have a clean staging area you can
+
+git add [some files]       # add [some files] to staging area
+git add [some more files]  # add [some more files] to staging area
+git commit                 # commit [some files] and [some more files]
+If you want to make that commit available on both branches you do
+
+git stash                     # remove all changes from HEAD and save them somewhere else
+git checkout <other-project>  # change branches
+git cherry-pick <commit-id>   # pick a commit from ANY branch and apply it to the current
+git checkout <first-project>  # change to the other branch
+git stash pop                 # restore all changes again
+
+
+
+E325: ATTENTION
+Found a swap file by the name "~/Desktop/w1d3_hw/.git/.COMMIT_EDITMSG.swp"
+          owned by: cmorelli   dated: Thu Jul 26 06:31:31 2018
+         file name: ~cmorelli/Desktop/w1d3_hw/.git/COMMIT_EDITMSG
+          modified: YES
+         user name: cmorelli   host name: Caras-MacBook-Pro.local
+        process ID: 64846
+While opening file "/Users/cmorelli/Desktop/w1d3_hw/.git/COMMIT_EDITMSG"
+             dated: Thu Jul 26 06:33:29 2018
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /Users/cmorelli/Desktop/w1d3_
+hw/.git/COMMIT_EDITMSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/Users/cmorelli/Desktop/w1d3_
+hw/.git/.COMMIT_EDITMSG.swp"
+    to avoid this message.
+
+Swap file "~/Desktop/w1d3_hw/.git/.COMMIT_EDITMSG.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort:
